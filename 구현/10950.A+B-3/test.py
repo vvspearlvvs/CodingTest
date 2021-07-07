@@ -1,3 +1,4 @@
+'''
 #10950.A+B-3
 T=int(input())
 for _ in range(T):
@@ -28,3 +29,11 @@ T=int(input())
 for i in range(T):
     a,b=map(int,input().split())
     print("Case #{}: {} + {} = {}".format(i+1,a,b,a+b))
+'''
+#10953. A+B-6
+import sys
+input=sys.stdin.readline
+T=int(input())
+for i in range(T):
+    a,b= map(int,input().split(","))
+    print(a+b)
