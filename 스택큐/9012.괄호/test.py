@@ -1,3 +1,5 @@
+#요구사항
+#입력으로 주어진 괄호문자열이 쌍이 맞는 올바른 괄호문자열인지 판단
 import sys
 input=sys.stdin.readline
 T=int(input())

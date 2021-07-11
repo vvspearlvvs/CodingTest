@@ -1,7 +1,7 @@
-def solution(n):
-     if number < 10:
+def solution(number):
+    if number < 10:
             return number;
-        return (number % 10) + sum_digit(number // 10)
+    return (number % 10) + solution(number//10)
 
 print(solution(123)) #6
 

@@ -1,26 +1,24 @@
 import sys
-input=sys.stdin.readline
-n=int(input())
-com=[input().split() for _ in range(n)]
-print(com)
-
+sys.stdin=open("C:\\Users\gg664\\OneDrive\\바탕 화면\\CodingTest\\Programmers\\백준\\10828.스택\\input.txt","rt")
+n=int(input()) #14
 stack=[]
-for c in com:
-    if c[0] == 'push':
-        stack.append(c[1])
-    elif c[0] == 'pop':
+for i in range(n):
+    command =sys.stdin.readline().split()
+    if command[0]=='push':
+        stack.append(command[1])
+    elif command[0]=='pop':
         if len(stack)==0:
             print(-1)
         else:
             print(stack.pop())
-    elif c[0] == 'top':
+    elif command[0]=='top':
         if len(stack)==0:
             print(-1)
         else:
             print(stack[-1])
-    elif c[0] == 'size':
+    elif command[0]=='size':
         print(len(stack))
-    elif c[0] == 'empty':
+    elif command[0]=='empty':
         if len(stack)==0:
             print(1)
         else:

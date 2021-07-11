@@ -4,7 +4,7 @@
 a=int(input())
 t=int(input())
 f=int(input()) #0:뻔, 1:데기
-
+이거다시
 round=3 #4회차까지 간다면
 
 guho=["뻔","데기"]
