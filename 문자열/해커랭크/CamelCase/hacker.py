@@ -7,3 +7,6 @@ def camelcase(s):
 
 s = input()
 result = camelcase(s)
+
+#input : saveChangesInTheEditor
+#ouput : 5
