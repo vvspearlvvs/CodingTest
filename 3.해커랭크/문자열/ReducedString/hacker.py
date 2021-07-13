@@ -1,5 +1,5 @@
 #요구사항
-#붙어있는 문자열을 지운다
+#인접한 문자열들끼리 지운다
 #aab -> aa붙어있어서 삭제 -> b
 #abba ->bb붙어있어서 삭제 -> aa붙어있어서 삭제
 def superReducedString(s):

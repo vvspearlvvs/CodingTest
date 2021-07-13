@@ -1,3 +1,5 @@
+#애너그램 : 각 문자열을 구성이 같은 문자열쌍.
+#애너그램을 만들기 위해 지워야하는 문자열의 최소개수를 구하시오
 from collections import Counter
 def makeAnagram(a,b):
     a = Counter(a)
