@@ -1,6 +1,3 @@
-# chris alan ->Chris Alan
-# 오류?
-
 def solve(s):
     result=[]
     split=s.split()
@@ -13,6 +10,6 @@ def solve(s):
             result.append(new_word)
     return ' '.join(result)
 
-s="132 456 Wq  m e"
+s="chris ala"
 result=solve(s)
 print(result)

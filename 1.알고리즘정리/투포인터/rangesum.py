@@ -19,6 +19,7 @@ for start in range(n):
     #현재 부분합이 찾을 부분합(m)일때 count
     if interval_sum == m:
         count+=1
+
     #현재 부분합이 찾을 부분합(m)보다 크거나
     interval_sum-=data[start] #부분합감소
 print(count)
