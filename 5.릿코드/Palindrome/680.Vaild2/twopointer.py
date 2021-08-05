@@ -1,6 +1,5 @@
 #적어도 한번 문자열을 제거한 후에 palindrome(팰린드롬)인지
 #투포인터(양끝)
-
 def validPalindrome(s):
     left,right=0,len(s)-1
     while left<right:
@@ -16,6 +15,7 @@ def validPalindrome(s):
             #제거하고나서 팰린드롬인지
             return tmp1 == tmp1[::-1] or tmp2 == tmp2[::-1]
     return True
+
 
 
 #print(validPalindrome("aba")) #true
