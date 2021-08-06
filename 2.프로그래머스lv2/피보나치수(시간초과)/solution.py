@@ -8,13 +8,15 @@ def pivot(n):
         return (pivot(n-1)+pivot(n-2))%1234567
 #print(pivot(5))
 
+#동적계획법
 def solution(n):
-    answer = []
-    for i in range(n+1):
-        if i==0 or i ==1:
-            answer.append(i)
-        else:
+    answer = [0,1]
+    if n<2:
+        return answer[n]
+    else:
+        for i in range(2,n+1):
             pivot=answer[i-1]+answer[i-2]
-            answer.append(pivot%124567)
-    return answer[-1]
+            answer.append(pivot)
+        return answer[n]
+
 print(solution(5))
